@@ -1,16 +1,30 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">-->
+
+<!--
+Padding for ViewPager must be set outside the ViewPager itself
+because with padding, EdgeEffect of ViewPager become strange.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-    <com.seoulapp.unilib.views.SlidingTabLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <android.support.v4.view.ViewPager
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    android:background="@color/primary"
+    tools:context="com.seoulapp.unilib.MainActivity">
 
+    <com.seoulapp.unilib.views.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 </LinearLayout>
+    <!--</android.support.v4.widget.DrawerLayout>-->
