@@ -1,0 +1,63 @@
+<!--
+  Copyright 2014 Soichiro Kashima
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+
+    <!--<color name="primary">#009688</color>
+    <color name="primaryDark">#00796b</color>
+    <color name="accent">#eeff41</color>
+    <color name="accentLight">#F4FF81</color>-->
+
+    <color name="primary">#fff</color>
+    <color name="primaryDark">#fff</color>
+    <color name="accent">#eeff41</color>
+    <color name="accentLight">#F4FF81</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="default_white">#fff</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_ef">#efefef</color>
+    <color name="gray">#888888</color>
+    <color name="gray_99">#999999</color>
+    <color name="black">#000000</color>
+    <color name="default_black">#000000</color>
+    <color name="br_blue">#75a1e4</color>
+    <color name="white_tran_20">#33000000</color>
+    <color name="dark_brown">#372d29</color>
+    <color name="dark_blue">#292e37</color>
+    <color name="light_yellow">#f1eae2</color>
+    <color name="main_color">#ec522e</color>
+    <color name="red">#fe2e2e</color>
+    <color name="gray_ba">#bababa</color>
+    <color name="gray_2e">#2e2e2e</color>
+    <color name="gray_7c">#7c7c7c</color>
+    <color name="gray_71">#717171</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_d2">#d2d2d2</color>
+    <color name="gray_f7">#f7f7f7</color>
+    <color name="gray_65">#656565</color>
+    <color name="gray_be">#bebebe</color>
+    <color name="gray_f8">#f8f8f8</color>
+    <color name="gray_d4">#d4d4d4</color>
+    <color name="gray_e3">#e3e3e3</color>
+    <!--쿠폰 관련 1.0 color value -->
+    <color name="yap_text_darkgray">#666666</color>
+    <color name="yap_text_lightgray">#888888</color>
+    <color name="yap_text_verydarkgray">#333333</color>
+    <color name="yap_text_gray">#919191</color>
+    <color name="yap_text_light_red">#e00013</color>
+
+    <color name="black_3b">#3b1e1e</color>
+</resources>
