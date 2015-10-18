@@ -13,9 +13,6 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-/**
- * Created by pkm on 2015-05-11.
- */
 public class BaseAppCompatActivity extends AppCompatActivity {
 
     private TextView mTvActionbarTitle;
@@ -37,7 +34,7 @@ public class BaseAppCompatActivity extends AppCompatActivity {
             View actionbarCustomView = actionbar.getCustomView();
             Toolbar parent =(Toolbar) actionbarCustomView.getParent();
             parent.setContentInsetsAbsolute(0, 0); // left, right padding remove
-
+            parent.setBackgroundColor(getResources().getColor(R.color.title_blue));
            /* View btnBack = actionbarCustomView.findViewById(R.id.btn_actionbar_default_back);
             btnBack.setTag(ButtonType.BACK);
             btnBack.setOnClickListener(mOnClickListener);*/

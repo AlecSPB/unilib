@@ -28,6 +28,6 @@
         android:textColor="#ffffff"
         android:singleLine="true"
         android:ellipsize="end"
-        android:textSize="16dp"/>
+        android:textSize="14dp"/>
 
 </RelativeLayout>

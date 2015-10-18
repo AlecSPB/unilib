@@ -20,7 +20,9 @@ because with padding, EdgeEffect of ViewPager become strange.
         android:id="@+id/sliding_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primary" />
+        android:background="@color/primary"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"

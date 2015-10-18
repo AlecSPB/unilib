@@ -33,6 +33,7 @@
     <color name="gray_99">#999999</color>
     <color name="black">#000000</color>
     <color name="default_black">#000000</color>
+    <color name="title_blue">#036db7</color>
     <color name="br_blue">#75a1e4</color>
     <color name="white_tran_20">#33000000</color>
     <color name="dark_brown">#372d29</color>
@@ -40,7 +41,10 @@
     <color name="light_yellow">#f1eae2</color>
     <color name="main_color">#ec522e</color>
     <color name="red">#fe2e2e</color>
+    <color name="book_list_background">#a5937b</color>
+    <color name="borrow_button_text_color">#fe7870</color>
     <color name="gray_ba">#bababa</color>
+    <color name="gray_43">#434343</color>
     <color name="gray_2e">#2e2e2e</color>
     <color name="gray_7c">#7c7c7c</color>
     <color name="gray_71">#717171</color>
