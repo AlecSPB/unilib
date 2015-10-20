@@ -20,7 +20,8 @@ public class MyPageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_my_page,container,false);
         mListView = (ListView)rootView.findViewById(R.id.my_page_list_view);
-//        View headerView = inflater.inflate(R.layout.header_my_page,)
+        View headerView = inflater.inflate(R.layout.header_my_page, null, false);
+        mListView.addHeaderView(headerView);
         return rootView;
     }
 }
