@@ -37,7 +37,7 @@
             android:layout_height="wrap_content" />
         <Button
             android:layout_width="70dp"
-            android:layout_height="18dp"
+            android:layout_height="23dp"
             android:text="수정"
             android:textColor="@color/gray_99"
             android:layout_alignParentRight="true"
@@ -48,7 +48,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="42dp"
+        android:minHeight="30dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:background="@color/gray_e3">
@@ -62,9 +62,9 @@
             android:gravity="center"/>
         <View
             android:layout_width="1dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/gray_99"/>
         <TextView
             android:layout_width="0dp"
