@@ -3,7 +3,6 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="70dp"
-    android:weightSum="4"
     android:background="@color/book_list_background">
 
     <LinearLayout
@@ -11,7 +10,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_weight="1"
-        android:layout_marginLeft="38dp"
+        android:layout_marginLeft="20dp"
         android:gravity="center">
         <ImageView
             android:id="@+id/book_tyep_img"
@@ -31,7 +30,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_weight="2"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="10dp"
         android:gravity="center">
         <TextView
             android:id="@+id/book_title"
@@ -55,6 +54,6 @@
         android:text="예약하기"
         android:textColor="@color/borrow_button_text_color"
         android:background="@drawable/rounded_button_shape"
-        android:layout_gravity="center"
+        android:layout_gravity="center_vertical|right"
         android:layout_marginRight="25dp"/>
 </LinearLayout>

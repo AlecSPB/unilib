@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.seoulapp.unilib.R;
 import com.seoulapp.unilib.adapter.BookListAdapter;
+import com.seoulapp.unilib.adapter.MyBookListAdapter;
 
 /**
  * Created by SAMSUNG on 2015-10-17.

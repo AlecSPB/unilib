@@ -18,7 +18,7 @@ public class MyBookListAdapter extends BaseAdapter {
     }
     @Override
     public int getCount() {
-        return 10;
+        return 5;
     }
 
     @Override
@@ -33,10 +33,10 @@ public class MyBookListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if(convertView != null) {
-            LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.my_book_list_item, parent, false);
+        if(convertView == null) {
+            LayoutInflater li = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = li.inflate(R.layout.my_book_list_item, parent, false);
         }
-        return null;
+        return convertView;
     }
 }
