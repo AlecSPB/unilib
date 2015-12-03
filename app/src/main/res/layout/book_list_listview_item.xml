@@ -48,6 +48,7 @@
             android:textColor="@color/white"/>
     </LinearLayout>
     <Button
+        android:id="@+id/btn_booking"
         android:layout_width="0dp"
         android:layout_height="25dp"
         android:layout_weight="1"

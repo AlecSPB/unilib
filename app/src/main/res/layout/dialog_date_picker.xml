@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background_shape">
 
     <ImageView
+        android:id="@+id/close_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/x"
@@ -13,7 +17,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:orientation="horizontal">
         <RelativeLayout
@@ -23,20 +26,23 @@
                 android:id="@+id/book_type_img"
                 android:layout_width="49dp"
                 android:layout_height="49dp"
-                android:layout_marginLeft="5dp"
                 android:src="@drawable/icon3"/>
             <TextView
                 android:layout_below="@+id/book_type_img"
+                android:id="@+id/book_type_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="가족/감동"
+                android:text="art"
+                android:minWidth="55dp"
                 android:textColor="@color/gray_99"
+                android:gravity="center"
                 android:textSize="15dp"/>
         </RelativeLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginRight="10dp">
             <TextView
                 android:id="@+id/book_title"
                 android:layout_width="match_parent"
@@ -52,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:text="J.M. 바스콘셀로스"
                 android:textColor="@color/black"
-                android:textSize="17dp"
+                android:textSize="15dp"
                 android:gravity="center"/>
             <TextView
                 android:id="@+id/book_intro"
@@ -70,9 +76,83 @@
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:background="@color/gray_99"
+        android:layout_marginTop="11dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
-    <NumberPicker
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/from_date"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="2015.10.08"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="~"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/to_date"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="2015.10.13"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gray_e3"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gray_e3"
+            android:layout_alignParentBottom="true"/>
+        <com.seoulapp.unilib.views.NumberPicker
+            android:id="@+id/from_month"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:unit="월"/>
+        <com.seoulapp.unilib.views.NumberPicker
+            android:layout_toRightOf="@id/from_month"
+            android:id="@+id/from_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:unit="일"/>
+        <com.seoulapp.unilib.views.NumberPicker
+            android:layout_toRightOf="@id/from_day"
+            android:id="@+id/to_month"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:unit="월"/>
+        <com.seoulapp.unilib.views.NumberPicker
+            android:layout_toRightOf="@id/to_month"
+            android:id="@+id/to_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:unit="일"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="예약신청하기"
+        android:background="@drawable/booking_button_shape"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:gravity="center"/>
 </LinearLayout>

@@ -23,6 +23,8 @@ public class BookListFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_book_list, container, false);
         ListView listView = (ListView)rootView.findViewById(R.id.book_list_view);
         mListAdapter = new BookListAdapter(getActivity());
+        View headerView = inflater.inflate(R.layout.header_empty, null, false);
+        listView.addHeaderView(headerView);
         listView.setAdapter(mListAdapter);
         return rootView;
     }

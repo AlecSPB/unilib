@@ -5,10 +5,12 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.seoulapp.unilib.R;
+import com.seoulapp.unilib.dialog.BookingDialog;
 
 /**
  * Created by SAMSUNG on 2015-10-17.
@@ -50,6 +52,14 @@ public class BookListListView extends LinearLayout {
             LayoutInflater li = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View view = li.inflate(R.layout.book_list_listview_item, this, false);
             TextView tvBookTitle = (TextView)view.findViewById(R.id.book_title);
+            Button btnBooking = (Button)view.findViewById(R.id.btn_booking);
+            btnBooking.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    BookingDialog dialog = new BookingDialog(mContext);
+                    dialog.show();
+                }
+            });
             addView(view, i);
         }
     }

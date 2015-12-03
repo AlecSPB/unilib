@@ -56,6 +56,7 @@
     <color name="gray_f8">#f8f8f8</color>
     <color name="gray_d4">#d4d4d4</color>
     <color name="gray_e3">#e3e3e3</color>
+    <color name="gray_ee">#eeeeee</color>
     <!--쿠폰 관련 1.0 color value -->
     <color name="yap_text_darkgray">#666666</color>
     <color name="yap_text_lightgray">#888888</color>
